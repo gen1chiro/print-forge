@@ -2,10 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Albert_Sans, Montserrat_Alternates} from "next/font/google";
-import Image from "next/image";
-import Link from "next/link";
-import printforgeLogo from "@/assets/images/printforge-logo.png";
-import printforgeLogoMobile from "@/assets/images/printforge-logo-mobile.png";
+import Navbar from "@/components/Navbar";
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -31,23 +28,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body className={`${albertSans.variable} ${montserratAlternates.variable}`}>
-                <header className="w-11/12 mx-auto py-8 flex items-center justify-between">
-                    <Link href="/">
-                        <Image
-                            src={printforgeLogo}
-                            alt="logo"
-                            className="hidden md:block"/>
-                        <Image
-                            src={printforgeLogoMobile}
-                            alt="logo"
-                            className="md:hidden"
-                        />
-                    </Link>
-                    <ul>
-                        <li className="inline-block px-4 text-xl uppercase"><Link href="/3d-models">3D Models</Link></li>
-                        <li className="inline-block px-4 text-xl uppercase"><Link href="/about">About</Link></li>
-                    </ul>
-                </header>
+                <Navbar />
                 {children}
             </body>
         </html>
