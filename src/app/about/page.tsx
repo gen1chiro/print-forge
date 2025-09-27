@@ -1,9 +1,15 @@
+import Image from "next/image";
+import aboutImage from "@/assets/images/about-image.png";
 
 export default function About() {
     return (
         <main className="w-11/12 max-w-8xl min-h-screen mx-auto flex flex-col gap-6">
             <div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-center">
-                <img src="/about-image.png" alt="about image" className="w-1/2 max-w-2xl" />
+                <Image
+                    src={aboutImage}
+                    alt="about image"
+                    className="w-1/2 max-w-2xl"
+                />
                 <div className="flex flex-col gap-6 md:w-1/2">
                     <p className="uppercase">About printforge</p>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold">Empowering makers worldwide</h1>

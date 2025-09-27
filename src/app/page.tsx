@@ -1,3 +1,5 @@
+import Image from "next/image";
+import heroImage from "@/assets/images/hero-image.png";
 
 export default function Home() {
   return (
@@ -12,7 +14,11 @@ export default function Home() {
                 <button className="border-1 px-3 py-2 font-semibold text-lg sm:text-xl md:text-2xl">BROWSE MODELS</button>
             </div>
             <div className="flex items-center lg:w-1/2 lg:p-10">
-                <img src="/hero-image.png" alt="hero-image" className="w-full" />
+                <Image
+                    src={heroImage}
+                    alt="hero-image"
+                    className="w-full"
+                />
             </div>
         </div>
     </main>
