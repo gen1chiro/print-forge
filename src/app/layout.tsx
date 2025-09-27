@@ -3,6 +3,7 @@ import "./globals.css";
 import React from "react";
 import { Albert_Sans, Montserrat_Alternates} from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import printforgeLogo from "@/assets/images/printforge-logo.png";
 import printforgeLogoMobile from "@/assets/images/printforge-logo-mobile.png";
 
@@ -31,18 +32,20 @@ export default function RootLayout({
         <html lang="en">
             <body className={`${albertSans.variable} ${montserratAlternates.variable}`}>
                 <header className="w-11/12 mx-auto py-8 flex items-center justify-between">
-                    <Image
-                        src={printforgeLogo}
-                        alt="logo"
-                        className="hidden md:block"/>
-                    <Image
-                        src={printforgeLogoMobile}
-                        alt="logo"
-                        className="md:hidden"
-                    />
+                    <Link href="/">
+                        <Image
+                            src={printforgeLogo}
+                            alt="logo"
+                            className="hidden md:block"/>
+                        <Image
+                            src={printforgeLogoMobile}
+                            alt="logo"
+                            className="md:hidden"
+                        />
+                    </Link>
                     <ul>
-                        <li className="inline-block px-4 text-xl uppercase">3D Models</li>
-                        <li className="inline-block px-4 text-xl uppercase">About</li>
+                        <li className="inline-block px-4 text-xl uppercase"><Link href="/3d-models">3D Models</Link></li>
+                        <li className="inline-block px-4 text-xl uppercase"><Link href="/about">About</Link></li>
                     </ul>
                 </header>
                 {children}
