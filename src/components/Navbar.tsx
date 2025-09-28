@@ -6,7 +6,7 @@ import printforgeLogoMobile from "@/assets/images/printforge-logo-mobile.png";
 const Navbar = () => {
 
     return (
-        <header className="w-11/12 mx-auto py-8 flex items-center justify-between">
+        <header className="w-11/12 max-w-7xl mx-auto py-8 flex items-center justify-between">
             <Link href="/">
                 <Image
                     src={printforgeLogo}

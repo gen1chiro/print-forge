@@ -9,7 +9,7 @@ const ModelTile = ({model}: ModelTileProps) => {
     return (
         <Link
             href={`/3d-models/${id}`}
-            className="border-1 flex flex-col justify-center items-start rounded-lg overflow-hidden gap-4">
+            className="border-1 flex flex-col justify-center items-start rounded-lg overflow-hidden gap-4 shadow hover:scale-[101%] hover:shadow-2xl transition-transform duration-200">
             <Image
                 src={aboutImage}
                 alt="model image"
