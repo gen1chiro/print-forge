@@ -3,7 +3,7 @@ import heroImage from "@/assets/images/hero-image.png";
 
 export default function Home() {
   return (
-    <main className="w-11/12 max-w-7xl mx-auto">
+    <main className="w-11/12 max-w-7xl h-full mx-auto flex items-center">
         <div className="w-full flex flex-col lg:flex-row justify-center gap-10">
             <div className="flex flex-col gap-10 md:gap-20 items-start justify-center lg:w-1/2">
                 <div className="flex flex-col gap-4 items-start justify-center">

@@ -3,12 +3,12 @@ import aboutImage from "@/assets/images/about-image.png";
 
 export default function About() {
     return (
-        <main className="w-11/12 max-w-7xl min-h-screen mx-auto flex flex-col gap-6">
+        <main className="w-11/12 max-w-7xl h-full mx-auto flex flex-col gap-6 ">
             <div className="w-full flex flex-col lg:flex-row gap-10 lg:gap-20 items-center justify-center">
                 <Image
                     src={aboutImage}
                     alt="about image"
-                    className="w-1/2 max-w-2xl"
+                    className="w-full lg:w-1/2 max-w-2xl"
                 />
                 <div className="flex flex-col gap-6 md:w-1/2">
                     <p className="uppercase">About printforge</p>
