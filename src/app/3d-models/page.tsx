@@ -9,7 +9,7 @@ export default async function Models() {
     ))
 
     return (
-        <div className="w-11/12 max-w-7xl h-full mx-auto flex flex-col gap-10 items-start justify-center">
+        <div className="w-5/6 flex flex-col gap-10 items-start justify-center">
             <h1 className="text-4xl font-bold">3D Models</h1>
             <div className="w-full grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {modelElements}

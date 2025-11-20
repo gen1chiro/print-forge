@@ -9,8 +9,8 @@ export default async function ModelPage({ params }: { params: { id: string } }) 
     const { name, description, likes, category } = model;
 
     return (
-        <div className="w-11/12 max-w-7xl mx-auto flex flex-col md:flex-row gap-10">
-            <Image src={aboutImage} alt="model image" className="w-full md:w-1/2" />
+        <div className="w-5/6 flex flex-col md:flex-row gap-10">
+            <Image src={aboutImage} alt="model image" className="w-full md:w-1/2 aspect-square" />
             <div className="relative flex flex-col justify-center items-start gap-6">
                 <Link href={"/3d-models"} className="hidden md:block absolute top-0 left-0 uppercase">back to overview</Link>
                 <p>{likes}</p>
