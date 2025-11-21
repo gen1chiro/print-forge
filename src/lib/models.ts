@@ -18,3 +18,9 @@ export const getModelById = async (id: number): Promise<Model> => {
 
     return model;
 }
+
+export const getModelsByCategory = async (category: string): Promise<Model[]> => {
+    return modelsData.filter(model =>
+        model.category === category
+    );
+}

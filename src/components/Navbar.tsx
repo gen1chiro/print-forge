@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li className="inline-block px-4 text-xl uppercase">
                     <Link
                         href="/3d-models"
-                        className={pathname === '/3d-models' ? 'text-orange-300 underline' : ''}
+                        className={pathname.startsWith('/3d-models') ? 'text-orange-300 underline' : ''}
                     >
                         3D Models
                     </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
                 <li className="inline-block px-4 text-xl uppercase">
                     <Link
                         href="/about"
-                        className={pathname === '/about' ? 'text-orange-300 underline' : ''}
+                        className={pathname.startsWith('/about') ? 'text-orange-300 underline' : ''}
                     >
                         About
                     </Link>
