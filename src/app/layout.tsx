@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import React from "react";
 import { Albert_Sans, Montserrat_Alternates} from "next/font/google";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 
 export const metadata: Metadata = {
     title: "Create Next App",

@@ -10,7 +10,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
     return (
-        <header className="fixed top-0 left-1/2 -translate-x-1/2 w-11/12 max-w-7xl mx-auto py-8 flex items-center justify-between bg-white z-10">
+        <header className="sticky top-0 w-11/12 max-w-7xl mx-auto flex items-center justify-between bg-white z-10 py-8">
             <Link href="/">
                 <Image
                     src={printforgeLogo}

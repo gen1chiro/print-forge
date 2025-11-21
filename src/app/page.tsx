@@ -1,5 +1,6 @@
 import Image from "next/image";
 import heroImage from "@/assets/images/hero-image.png";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
                     <h1 className="font-bold text-4xl sm:text-5xl md:text-6xl xl:text-7xl">Discover what’s possible with 3D printing</h1>
                     <p className="text-lg sm:text-xl md:text-2xl xl:text-3xl">Join our community of creators and explore a vast library of user-submitted models.</p>
                 </div>
-                <button className="border-1 px-3 py-2 font-semibold text-lg sm:text-xl md:text-2xl">BROWSE MODELS</button>
+                <Link href='/3d-models' className="border-1 px-3 py-2 font-semibold text-lg sm:text-xl md:text-2xl">BROWSE MODELS</Link>
             </div>
             <div className="flex items-center lg:w-1/2">
                 <Image
